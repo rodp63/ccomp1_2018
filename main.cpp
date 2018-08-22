@@ -2,7 +2,10 @@
 using namespace std;
 int main(){
 
-  cout<<"Hello world! Joaquin"<<endl;
-  cout<<"Roli es un cabo"<<endl;
+  int a,b,z;
+  a = 2;
+  b = 3;
+  z = a + b;
+  cout<<z<<endl;
 
 }
