@@ -32,7 +32,7 @@ void PointArr::print(){
 void PointArr::resize(int newsize){
   int sizetemp = (size < newsize) ? newsize : size;
   Point* temp = new Point[newsize];
-  for(int i=0; i<size; i++){
+  for(int i=0; i<sizetemp; i++){
     temp[i] = data[i];
   }
   delete[] data;
@@ -50,4 +50,14 @@ void PointArr::push_back(Point p){
 }
 
 void PointArr::insert(int pos,Point p){
-  
+  resize(size+1);
+  for(int i=size-1; i>pos; i--)
+    data[i]=data[i-1];
+  data[pos] = p;
+}
+
+void PointArr::erase(int pos){
+  for(int i=pos; i<(size-1); i++)
+    data[i]=data[i+1];
+  resize(size-1);
+}

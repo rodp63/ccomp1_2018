@@ -13,6 +13,7 @@ class PointArr
   void clear();
   void push_back(Point);
   void insert(int,Point);
+  void erase(int);
   
  private:
   int size;

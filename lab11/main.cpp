@@ -42,8 +42,10 @@ int main(){
   arr.print();
   arr.clear();
   cout<<"Arr size: "<<arr.getsize()<<endl;
-
-  arr.push_back(*easy);
+  for(int i=0; i<5; i++) arr.push_back(*easy);
+  arr.print();
+  arr.insert(2,po1);
+  arr.erase(3);
   arr.print();
   
 
