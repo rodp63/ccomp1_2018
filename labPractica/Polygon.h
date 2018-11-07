@@ -10,8 +10,9 @@ class Polygon
         void printarea(){
             std::cout<< this->area() <<std::endl;
         }
-        int getw(){return width;}
-        int geth(){return height;}
+        void printvalues(){
+            std::cout<<width<<" "<<height<<std::endl;
+        }
 
     protected:
         int width, height;
@@ -20,9 +21,9 @@ class Polygon
 
 class Rectangle : public Polygon
 {
-    int width, height;
+  //int width, height;
     public:
-        Rectangle(int a,int b) : width(a), height(b) {}
+        Rectangle(int a,int b) : Polygon(a,b) {}
         double area(){
             return (width*height);
         }
@@ -32,7 +33,7 @@ class Triangle : public Polygon
 {
     int width, height;
     public:
-        Triangle(int a,int b) : width(a), height(b) {}
+        Triangle(int a,int b) : Polygon(a,b) {}
         double area(){
             return (width*height)/2.0;
         }

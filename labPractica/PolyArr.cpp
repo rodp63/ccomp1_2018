@@ -64,7 +64,7 @@ void PolyArr::erase(int ind)
 void PolyArr::print()
 {
   for(int i=0; i<size; i++)
-    std::cout<<data[i].getw()<<" "<<data[i].geth()<<std::endl;
+    data[i].printvalues();
 }
     
 
