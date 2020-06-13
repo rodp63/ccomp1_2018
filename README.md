@@ -1,2 +1,2 @@
-# Ccomp1_2018
-Documentation to pass easy Ccomp1 :D
+# CCOMP1_2018
+Documentation to esily pass CCOMP1 at UCSP :D
